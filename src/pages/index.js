@@ -1,21 +1,45 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Layout from '../components/Layout'
+import Header from '../components/index/Header'
+import Overview from '../components/index/Overview'
+import Opportunities from '../components/index/Opportunities'
+import Technologies from '../components/index/Technologies'
+import Teams from '../components/index/Teams'
+import Faqs from '../components/index/Faqs'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+export const teamsQuery = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+        description
+        university
+        lang
+        register
+        mail
+        social {
+          youtube
+          github
+          twitter
+        }
+      }
+    }
+  }
+`
 
-const IndexPage = () => (
+export default ({
+  data: {
+    site: {
+      siteMetadata: { university, register },
+    },
+  },
+}) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Header {...{ university, register }} />
+    <Overview />
+    <Opportunities />
+    <Technologies />
+    <Teams />
+    <Faqs register={register} />
   </Layout>
 )
-
-export default IndexPage

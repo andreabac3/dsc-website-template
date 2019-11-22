@@ -1,0 +1,33 @@
+- name: John Doe
+  rule: Mentor
+  img: ./avatar.png
+  descs:
+    - Mobile and Web developer
+    - Open source enthusiast
+    - Community mentor
+  social:
+    twitter: https://www.example.com
+    github: https://www.example.com
+    linkedin: https://www.example.com
+
+- name: John Doe 2
+  rule: Mentor
+  img: ./avatar.png
+  descs:
+    - Mobile and Web developer
+    - Open source enthusiast
+    - Community mentor
+  social:
+    twitter: https://www.example.com
+    github: https://www.example.com
+
+- name: John Doe 3
+  rule: Mentor
+  img: ./avatar.png
+  descs:
+    - Mobile and Web developer
+    - Open source enthusiast
+    - Community mentor
+  social:
+    github: https://www.example.com
+    linkedin: https://www.example.com
