@@ -16,10 +16,7 @@ $ gatsby develop --host 0.0.0.0
 ```
 Note: this is only required if you want to change the website structure / hardcoded content. It is not necessary if you only want to edit metadata or teams information.
 
-`$ npm install`
-
-``
-
+Open your browser at localhost:8000/
 
 ### Social type
 Is an object of kind `{ socialName: link }`.
@@ -61,3 +58,11 @@ Schema:
 ```
 
 Social icons already imported: twitter, linkedin, github
+
+# Authors
+
+* **Alessandro Scandone**  (Frontend developer) - [Github profile](https://github.com/ascandone)
+* **Andrea Bacciu**  (Software Engineer) [Github profile](https://github.com/andreabac3)
+
+
+
