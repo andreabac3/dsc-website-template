@@ -1,6 +1,6 @@
 # Google Developer Student Club Template Website
 
-> 🛠 This is a work in progress. Documentation will be soon updated
+> 🛠 This is a work in progress. The structure may be subject to change.
 
 This is a refactor of the [EKSU DSC](https://github.com/DSCEksu/dsceksu-laravel) website as a [gatsby](https://www.gatsbyjs.org/) template.
 
@@ -12,15 +12,16 @@ $ npm install -g gatsby-cli
 
 # install dependencies
 $ npm install
-$ gatsby develop --host 0.0.0.0
+
+# Run on localhost:8000 (by default)
+$ gatsby develop
 ```
-Note: this is only required if you want to change the website structure / hardcoded content. It is not necessary if you only want to edit metadata or teams information.
 
-Open your browser at localhost:8000/
+> Note: this is only required if you want to change the website structure / hardcoded content. It is not necessary if you only want to edit metadata or teams information.
 
-### Social type
-Is an object of kind `{ socialName: link }`.
-The [Fontawesome](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons) library is used, and the icons must be explicitly imported in the components in which they are used.
+### Social links
+The type `Social` in the schemas below is an object of kind `{ socialName: link }`.
+The [Fontawesome](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons) library is used, and the used icons must be explicitly imported within the components.
 
 ## Site Metadata
 
@@ -63,6 +64,3 @@ Social icons already imported: twitter, linkedin, github
 
 * **Alessandro Scandone**  (Frontend developer) - [Github profile](https://github.com/ascandone)
 * **Andrea Bacciu**  (Software Engineer) [Github profile](https://github.com/andreabac3)
-
-
-
