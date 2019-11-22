@@ -2,7 +2,7 @@ import React from 'react'
 import Team from './Team'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 export default _ => {
   const {

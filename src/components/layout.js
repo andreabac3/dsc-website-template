@@ -3,7 +3,7 @@ import Head from './Head'
 import Nav from './Nav'
 import Footer from './Footer'
 import Seo from './Seo'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import './Layout.scss'
 
 export default ({ children }) => {
