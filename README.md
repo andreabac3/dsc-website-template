@@ -51,7 +51,7 @@ Schema:
 ```js
 {
 	name: string,
-	rule: string,
+	role: string,
 	img: string, // relative to ./teams/
 	descs: [string],
 	social: Social,
