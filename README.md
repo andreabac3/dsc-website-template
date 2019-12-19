@@ -20,7 +20,7 @@ To change the content of the site, go to the 'content' folder located in the roo
     linkedin: https://www.example.com
 ```
 
-## Prerequirements
+## Prerequisites
 Nodejs >= 8.x 
 ### Installation
 ```sh
