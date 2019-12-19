@@ -8,8 +8,11 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as icons from '../icons'
 
-const Footer = ({ social, mail }) => {
+const Footer = () => {
   const {
+    site: {
+      siteMetadata: { social, mail },
+    },
     allFooterYaml: { nodes: widgets },
   } = useStaticQuery(graphql`
     {
@@ -19,6 +22,16 @@ const Footer = ({ social, mail }) => {
           links {
             link
             name
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          mail
+          social {
+            youtube
+            github
+            twitter
           }
         }
       }

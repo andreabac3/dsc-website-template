@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       <Seo {...{ title, lang, description }} />
       <Nav register={register} />
       {children}
-      <Footer {...{ social, mail }} />
+      <Footer />
     </>
   )
 }
