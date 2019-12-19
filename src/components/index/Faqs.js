@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 const Faqs = () => {
   const {
     site: {
-      siteMetadata: { register },
+      siteMetadata: { mail },
     },
     faqsYaml: {
       header,
@@ -17,7 +17,7 @@ const Faqs = () => {
     {
       site {
         siteMetadata {
-          register
+          mail
         }
       }
       faqsYaml {
@@ -45,9 +45,9 @@ const Faqs = () => {
           <Faq {...faq4} />
         </Row>
       </Container>
-      {register == null ? null : (
+      {mail == null ? null : (
         <div className="mt-40 text-center">
-          <a href="" className="hero-button">
+          <a href={`mailto:${mail}`} className="hero-button">
             Send us an email
           </a>
         </div>
