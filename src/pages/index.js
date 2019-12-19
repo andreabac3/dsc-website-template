@@ -6,42 +6,15 @@ import Opportunities from '../components/index/Opportunities'
 import Technologies from '../components/index/Technologies'
 import Teams from '../components/index/Teams'
 import Faqs from '../components/index/Faqs'
-import { graphql } from 'gatsby'
 
-export const teamsQuery = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-        description
-        university
-        lang
-        register
-        mail
-        social {
-          youtube
-          github
-          twitter
-        }
-      }
-    }
-  }
-`
-
-const Index = ({
-  data: {
-    site: {
-      siteMetadata: { university, register },
-    },
-  },
-}) => (
+const Index = () => (
   <Layout>
-    <Header {...{ university, register }} />
+    <Header />
     <Overviews />
     <Opportunities />
     <Technologies />
     <Teams />
-    <Faqs register={register} />
+    <Faqs />
   </Layout>
 )
 

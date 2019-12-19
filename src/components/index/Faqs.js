@@ -4,14 +4,22 @@ import Row from 'react-bootstrap/Row'
 import Faq from './Faq'
 import { graphql, useStaticQuery } from 'gatsby'
 
-const Faqs = ({ register }) => {
+const Faqs = () => {
   const {
+    site: {
+      siteMetadata: { register },
+    },
     faqsYaml: {
       header,
       faqs: [faq1, faq2, faq3, faq4],
     },
   } = useStaticQuery(graphql`
     {
+      site {
+        siteMetadata {
+          register
+        }
+      }
       faqsYaml {
         header
         faqs {
