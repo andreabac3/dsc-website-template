@@ -39,7 +39,7 @@ gatsby develop --host 0.0.0.0
 ```
 # Authors
 * **Andrea Bacciu**  (**DSC LEAD** - Software Engineer) [Github profile](https://github.com/andreabac3)
-* **Alessandro Scandone**  (**Core Team** Frontend developer) - [Github profile](https://github.com/ascandone)
+* **Alessandro Scandone**  (**Core Team** - Frontend developer) - [Github profile](https://github.com/ascandone)
 ### Special thanks to the EKSU DSC teams:
 This is a refactor of the [EKSU DSC](https://github.com/DSCEksu/dsceksu-laravel) website as a [gatsby](https://www.gatsbyjs.org/) template.
 
