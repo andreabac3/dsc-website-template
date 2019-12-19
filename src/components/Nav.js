@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import logo from '../images/dsc-logo-large.png'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-
-export default ({ register }) => {
+import BsNav from 'react-bootstrap/Nav'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
+const Nav = ({ register }) => {
   const [sticky, setSticky] = useState(false)
 
   useEffect(() => {
@@ -42,35 +43,39 @@ export default ({ register }) => {
           </span>
         </Navbar.Toggle>
         <Navbar.Collapse>
-          <Nav className="ml-lg-auto">
-            <Nav.Item>
-              <Nav.Link href="#overview">Overview</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#technologies">Technologies</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#workshops">Workshops</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#team">Team</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#faqs">Faqs</Nav.Link>
-            </Nav.Item>
-          </Nav>
-          <div className="custom-menu__right">
-            <a
-              href={register}
-              className="event-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-users"></i> Become a member
-            </a>
-          </div>
+          <BsNav className="ml-lg-auto">
+            <BsNav.Item>
+              <BsNav.Link href="#overview">Overview</BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item>
+              <BsNav.Link href="#technologies">Technologies</BsNav.Link>
+            </BsNav.Item>
+            {/* <BsNav.Item>
+              <BsNav.Link href="#workshops">Workshops</BsNav.Link>
+            </BsNav.Item> */}
+            <BsNav.Item>
+              <BsNav.Link href="#team">Team</BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item>
+              <BsNav.Link href="#faqs">Faqs</BsNav.Link>
+            </BsNav.Item>
+          </BsNav>
+          {register == null ? null : (
+            <div className="custom-menu__right">
+              <a
+                href={register}
+                className="event-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faUsers} /> Become a member
+              </a>
+            </div>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>
   )
 }
+
+export default Nav

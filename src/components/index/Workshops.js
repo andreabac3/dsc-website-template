@@ -4,9 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
 
-// import techwork from '../../images/technologies/techwork.png'
-
-export default () => (
+const Workshops = () => (
   <section
     id="workshops"
     className="section-spacer workshops-section bg-very__gray"
@@ -129,3 +127,5 @@ export default () => (
     </div>
   </section>
 )
+
+export default Workshops

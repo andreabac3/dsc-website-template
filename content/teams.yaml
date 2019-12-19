@@ -1,6 +1,6 @@
 - name: John Doe
-  rule: Mentor
-  img: ./avatar.png
+  role: Mentor
+  img: images/teams/avatar.png
   descs:
     - Mobile and Web developer
     - Open source enthusiast
@@ -11,8 +11,8 @@
     linkedin: https://www.example.com
 
 - name: John Doe 2
-  rule: Mentor
-  img: ./avatar.png
+  role: Mentor
+  img: images/teams/avatar.png
   descs:
     - Mobile and Web developer
     - Open source enthusiast
@@ -22,8 +22,8 @@
     github: https://www.example.com
 
 - name: John Doe 3
-  rule: Mentor
-  img: ./avatar.png
+  role: Mentor
+  img: images/teams/avatar.png
   descs:
     - Mobile and Web developer
     - Open source enthusiast

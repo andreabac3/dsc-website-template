@@ -1,12 +1,11 @@
 import React from 'react'
-import Head from './Head'
 import Nav from './Nav'
 import Footer from './Footer'
 import Seo from './Seo'
 import { useStaticQuery, graphql } from 'gatsby'
 import './Layout.scss'
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   const {
     site: {
       siteMetadata: { title, lang, description, register, social, mail },
@@ -33,7 +32,6 @@ export default ({ children }) => {
 
   return (
     <>
-      <Head />
       <Seo {...{ title, lang, description }} />
       <Nav register={register} />
       {children}
@@ -41,3 +39,5 @@ export default ({ children }) => {
     </>
   )
 }
+
+export default Layout

@@ -27,8 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./teams/`,
-        name: 'teams',
+        path: `./content/`,
       },
     },
     `gatsby-transformer-sharp`,

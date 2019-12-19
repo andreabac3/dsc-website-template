@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-export default ({ title, lang, description }) => (
+const Seo = ({ title, lang, description }) => (
   <Helmet
     htmlAttributes={{
       lang,
@@ -43,3 +43,5 @@ export default ({ title, lang, description }) => (
     ]}
   />
 )
+
+export default Seo

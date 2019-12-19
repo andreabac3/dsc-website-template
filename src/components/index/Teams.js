@@ -4,29 +4,27 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import { useStaticQuery, graphql } from 'gatsby'
 
-export default _ => {
+const Teams = _ => {
   const {
-    allTeamsYaml: { edges },
+    allTeamsYaml: { nodes: teams },
   } = useStaticQuery(graphql`
     {
       allTeamsYaml {
-        edges {
-          node {
-            name
-            rule
-            descs
-            img {
-              childImageSharp {
-                fixed(width: 100, height: 100) {
-                  ...GatsbyImageSharpFixed
-                }
+        nodes {
+          name
+          role
+          descs
+          img {
+            childImageSharp {
+              fixed(width: 100, height: 100) {
+                ...GatsbyImageSharpFixed
               }
             }
-            social {
-              twitter
-              github
-              linkedin
-            }
+          }
+          social {
+            twitter
+            github
+            linkedin
           }
         }
       }
@@ -46,8 +44,8 @@ export default _ => {
 
         <Container>
           <Row>
-            {edges.map(({ node }, i) => (
-              <Team {...node} key={i} />
+            {teams.map((team, i) => (
+              <Team {...team} key={i} />
             ))}
           </Row>
         </Container>
@@ -55,3 +53,5 @@ export default _ => {
     </section>
   )
 }
+
+export default Teams

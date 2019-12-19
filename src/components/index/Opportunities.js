@@ -1,61 +1,41 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Card from 'react-bootstrap/Card'
+import Opportunity from './Opportunity'
+import { graphql, useStaticQuery } from 'gatsby'
 
-export default () => (
-  <section id="opportunities" className="section-spacer section-opp">
-    <Container>
-      <header className="section-header text-center">
-        <h2 className="section-title-custom">
-          Opportunities DSCs provide students with
-        </h2>
-      </header>
-      <Row>
-        <Col sm={6}>
-          <Card body>
-            <ul>
-              <li>
-                Grow their knowledge on developer technologies and more through
-                peer to peer workshops and vents.
-              </li>
-            </ul>
-          </Card>
-        </Col>
-        <Col sm={6}>
-          <Card body>
-            <ul>
-              <li>
-                Gain relevant industry experience by solving problems for local
-                organizations with technology based solutions.
-              </li>
-            </ul>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
-        <Col sm={6}>
-          <Card body>
-            <ul>
-              <li>
-                howcase their prototypes and solutions to their local community
-                and industry leaders.
-              </li>
-            </ul>
-          </Card>
-        </Col>
-        <Col sm={6}>
-          <Card body>
-            <ul>
-              <li>
-                Getting inspiration to become world-className developers and
-                changemakers from sharing others' success stories.
-              </li>
-            </ul>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-  </section>
-)
+const Opportunities = () => {
+  const {
+    opportunitiesYaml: {
+      header,
+      opportunities: [opp1, opp2, opp3, opp4],
+    },
+  } = useStaticQuery(graphql`
+    {
+      opportunitiesYaml {
+        header
+        opportunities
+      }
+    }
+  `)
+
+  return (
+    <section id="opportunities" className="section-spacer section-opp">
+      <Container>
+        <header className="section-header text-center">
+          <h2 className="section-title-custom">{header}</h2>
+        </header>
+        <Row>
+          <Opportunity text={opp1} />
+          <Opportunity text={opp2} />
+        </Row>
+        <Row>
+          <Opportunity text={opp3} />
+          <Opportunity text={opp4} />
+        </Row>
+      </Container>
+    </section>
+  )
+}
+
+export default Opportunities

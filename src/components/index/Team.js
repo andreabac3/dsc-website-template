@@ -3,13 +3,9 @@ import Img from 'gatsby-image'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faTwitter,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
+import * as icons from '../../icons'
 
-export default ({ name, role, descs, img, social }) => (
+const Team = ({ name, role, descs, img, social }) => (
   <Col xs={12} md={4} className="col-md-4 col-15">
     <Card className="card event-card">
       <Card className="hovercard">
@@ -22,28 +18,20 @@ export default ({ name, role, descs, img, social }) => (
             <h5>{name}</h5>
             <p>{role}</p>
           </div>
-          {descs.map(desc => (
-            <div key={desc} className="desc">
+          {descs.map((desc, i) => (
+            <div key={i} className="desc">
               {desc}
             </div>
           ))}
         </div>
         <div className="bottom">
           <ul className="social-list__inline mt-10">
-            {Object.entries({
-              twitter: faTwitter,
-              github: faGithub,
-              linkedin: faLinkedin,
-            })
-              .filter(([socialName]) => social[socialName] != null)
-              .map(([socialName, icon]) => (
-                <li key={socialName}>
-                  <a
-                    href={social[socialName]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon icon={icon} />
+            {Object.entries(social)
+              .filter(([, link]) => link != null)
+              .map(([name, link]) => (
+                <li key={name}>
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={icons[name]} />
                   </a>
                 </li>
               ))}
@@ -53,3 +41,5 @@ export default ({ name, role, descs, img, social }) => (
     </Card>
   </Col>
 )
+
+export default Team

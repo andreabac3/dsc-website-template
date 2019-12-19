@@ -1,0 +1,22 @@
+- header: Programs
+  links:
+  - name: Women Techmakers
+    link: https://www.womentechmakers.com/
+  - name: Google Developer Experts
+    link: https://developers.google.com/experts/
+  - name: Google Developer Groups
+    link: https://developers.google.com/programs/community/
+- header: Developers
+  links:
+    - name: Firebase console
+      link: https://console.firebase.google.com/
+    - name: Google Cloud Platform
+      link: https://console.cloud.google.com/
+    - name: Actions on Google
+      link: https://console.actions.google.com/
+- header: Contribute
+  links:
+    - name: File a bug
+      link: https://github.com/DSCEksu/dsceksu-laravel/issues/new?template=documentation-bug.md
+    - name: View source
+      link: https://github.com/DSCEksu/dsceksu-laravel

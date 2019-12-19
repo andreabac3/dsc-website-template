@@ -1,0 +1,13 @@
+- header: Frequently Asked Questions
+  faqs:
+    - header: Who can become a member?
+      body: The clubs is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills.
+
+    - header: How frequently do events and workshops occur?
+      body: We hold workshops and showcases at __UNIVERSITY__ & we would recommend you to join our community by becoming a member to get updates.
+
+    - header: What should I carry when attending a workshop?
+      body: We recommend you carry with you a notebook, pen and a laptop because more often than not we make our hands dirty with code. Most importantly, carry along a healthy dose of curiosity and enthusiasm.
+
+    - header: Who should I reach out to if I have any questions?
+      body: If you have any questions or comments, please don't hesitate to contact us by clicking the button below. We would be happy to stay engaged via email even after the event

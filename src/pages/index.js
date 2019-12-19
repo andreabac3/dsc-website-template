@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Header from '../components/index/Header'
-import Overview from '../components/index/Overview'
+import Overviews from '../components/index/Overviews'
 import Opportunities from '../components/index/Opportunities'
 import Technologies from '../components/index/Technologies'
 import Teams from '../components/index/Teams'
 import Faqs from '../components/index/Faqs'
+import { graphql } from 'gatsby'
 
 export const teamsQuery = graphql`
   {
@@ -27,7 +28,7 @@ export const teamsQuery = graphql`
   }
 `
 
-export default ({
+const Index = ({
   data: {
     site: {
       siteMetadata: { university, register },
@@ -36,10 +37,12 @@ export default ({
 }) => (
   <Layout>
     <Header {...{ university, register }} />
-    <Overview />
+    <Overviews />
     <Opportunities />
     <Technologies />
     <Teams />
     <Faqs register={register} />
   </Layout>
 )
+
+export default Index

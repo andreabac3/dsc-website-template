@@ -3,8 +3,10 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import image from '../../images/header/diversity.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
-export default ({ university, register }) => (
+const Header = ({ university, register }) => (
   <header id="hero" className="hero">
     <Container>
       <Row className="align-items-center">
@@ -32,14 +34,16 @@ export default ({ university, register }) => (
                 </p>
               </div>
             </div>
-            <a
-              className="hero-button"
-              href={register}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-users"></i> Become a member
-            </a>
+            {register == null ? null : (
+              <a
+                className="hero-button"
+                href={register}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faUsers} /> Become a member
+              </a>
+            )}
           </div>
         </Col>
         <Col xs={12} sm={5} className="ml-auto ml-pic">
@@ -55,3 +59,5 @@ export default ({ university, register }) => (
     </Container>
   </header>
 )
+
+export default Header
