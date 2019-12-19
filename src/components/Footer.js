@@ -6,11 +6,7 @@ import logo from '../images/dsc-logo-large.png'
 import FooterWidget from './FooterWidget'
 import { useStaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faTwitter,
-  faGithub,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons'
+import * as icons from '../icons'
 
 const Footer = ({ social, mail }) => {
   const {
@@ -40,24 +36,16 @@ const Footer = ({ social, mail }) => {
               {mail == null ? null : (
                 <>
                   <span>Feel free to drop us an email at </span>
-                  <a href="mailto:"> {mail} </a>{' '}
+                  <a href={`mailto:${mail}`}> {mail} </a>{' '}
                 </>
               )}
               <ul className="social-list__inline mt-10">
-                {Object.entries({
-                  twitter: faTwitter,
-                  github: faGithub,
-                  youtube: faYoutube,
-                })
-                  .filter(([name]) => name in social)
-                  .map(([name, icon]) => (
-                    <li key={name}>
-                      <a
-                        href={social[name]}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon icon={icon} />
+                {Object.entries(social)
+                  .filter(([, link]) => link != null)
+                  .map(([name, link], i) => (
+                    <li key={i}>
+                      <a href={link} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={icons[name]} />
                       </a>
                     </li>
                   ))}
