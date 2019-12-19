@@ -1,5 +1,5 @@
 # 🚀 Google Developer Student Club Template Website
-> The commitment of this repository is to allow all the Developer Student Clubs to **generate a site** for their club in **less than 3 minutes**, performing a few simple steps.<br> <br>
+The commitment of this repository is to allow all the Developer Student Clubs to **generate a site** for their club in **less than 3 minutes**, performing a few simple steps.<br> <br>
 **The management of this site does not require any kind of web development and backend competence.**
 
 ## How can I change the content of the site without knowing web languages?
