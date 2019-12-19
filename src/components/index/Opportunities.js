@@ -39,7 +39,7 @@ export default () => (
           <Card body>
             <ul>
               <li>
-                howcase their prototypes and solutions to their local community
+                Showcase their prototypes and solutions to their local community
                 and industry leaders.
               </li>
             </ul>
@@ -49,7 +49,7 @@ export default () => (
           <Card body>
             <ul>
               <li>
-                Getting inspiration to become world-className developers and
+                Getting inspiration to become world-class developers and
                 changemakers from sharing others' success stories.
               </li>
             </ul>

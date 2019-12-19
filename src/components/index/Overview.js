@@ -27,7 +27,7 @@ export default () => (
               <h4 className="feature-title">Why DSC?</h4>
               <p>
                 For students to learn development skills, solve problems through
-                technology and inspire them to be world className developers and
+                technology and inspire them to be world-class developers and
                 changemakers.
               </p>
             </div>
