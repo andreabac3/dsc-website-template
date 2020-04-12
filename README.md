@@ -112,7 +112,7 @@ gatsby build && firebase deploy
 ```
 All done! Once the deployment concludes, you can access your website using `firebaseProjectId.firebaseapp.com` or `firebaseProjectId.web.app`.
 
-N.B: of course replace the keyword firebase Project Id with the name of your project.
+N.B: of course replace the keyword <firebaseProjectId> with the name of your project.
 </p>
 </details>
 
