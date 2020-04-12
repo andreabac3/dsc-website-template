@@ -75,7 +75,7 @@ npm run deploy
 gatsby develop --host 0.0.0.0
 ```
 
-## Deploy on Firebase Hosting
+## Deploy on Firebase Hosting 🔥
 
 We suggest to read the [Firebase Hosting guide reference from Gatsby website](https://www.gatsbyjs.org/docs/deploying-to-firebase/)
 
