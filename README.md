@@ -63,6 +63,8 @@ npm install
 
 ## Deploy on github pages
 
+Remember to fork the project to deploy on github pages
+
 ```sh
 npm run deploy
 ```
