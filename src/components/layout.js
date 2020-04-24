@@ -7,24 +7,20 @@ import './Layout.scss'
 
 const Layout = ({ children }) => {
   const {
-    site: {
-      siteMetadata: { title, lang, description, register, social, mail },
-    },
+    websiteYaml: { title, lang, description, register, social, mail },
   } = useStaticQuery(graphql`
     {
-      site {
-        siteMetadata {
-          title
-          description
-          university
-          lang
-          register
-          mail
-          social {
-            youtube
-            github
-            twitter
-          }
+      websiteYaml {
+        title
+        description
+        university
+        lang
+        register
+        mail
+        social {
+          youtube
+          github
+          twitter
         }
       }
     }

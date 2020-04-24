@@ -10,9 +10,7 @@ import * as icons from '../icons'
 
 const Footer = () => {
   const {
-    site: {
-      siteMetadata: { social, mail },
-    },
+    websiteYaml: { mail, social },
     allFooterYaml: { nodes: widgets },
   } = useStaticQuery(graphql`
     {
@@ -25,14 +23,12 @@ const Footer = () => {
           }
         }
       }
-      site {
-        siteMetadata {
-          mail
-          social {
-            youtube
-            github
-            twitter
-          }
+      websiteYaml {
+        mail
+        social {
+          youtube
+          github
+          twitter
         }
       }
     }

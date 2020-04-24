@@ -6,19 +6,15 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 const Faqs = () => {
   const {
-    site: {
-      siteMetadata: { mail },
-    },
+    websiteYaml: { mail },
     faqsYaml: {
       header,
       faqs: [faq1, faq2, faq3, faq4],
     },
   } = useStaticQuery(graphql`
     {
-      site {
-        siteMetadata {
-          mail
-        }
+      websiteYaml {
+        mail
       }
       faqsYaml {
         header

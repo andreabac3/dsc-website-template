@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import BsNav from 'react-bootstrap/Nav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
+
 const Nav = ({ register }) => {
   const [sticky, setSticky] = useState(false)
 
