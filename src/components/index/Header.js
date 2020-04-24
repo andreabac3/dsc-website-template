@@ -5,18 +5,18 @@ import Row from 'react-bootstrap/Row'
 import image from '../../images/header/diversity.png'
 import { graphql, useStaticQuery } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const {
     site: {
-      siteMetadata: { register, university },
+      siteMetadata: { calendar, university },
     },
   } = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
-          register
+          calendar
           university
         }
       }
@@ -50,14 +50,14 @@ const Header = () => {
                   </p>
                 </div>
               </div>
-              {register == null ? null : (
+
+              {calendar == null ? null : (
                 <a
                   className="hero-button"
-                  href={register}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={calendar}
                 >
-                  <FontAwesomeIcon icon={faUsers} /> Become a member
+                  <FontAwesomeIcon icon={faCalendar} className="mr-2" />
+                  Add to calendar
                 </a>
               )}
             </div>
