@@ -51,8 +51,8 @@ const Footer = () => {
               <ul className="social-list__inline mt-10">
                 {Object.entries(social)
                   .filter(([, link]) => link != null)
-                  .map(([name, link], i) => (
-                    <li key={i}>
+                  .map(([name, link]) => (
+                    <li key={name}>
                       <a href={link} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={icons[name]} />
                       </a>
@@ -64,8 +64,8 @@ const Footer = () => {
 
           <Col md={8} xs={10}>
             <Row>
-              {widgets.map(widget => (
-                <FooterWidget {...widget} />
+              {widgets.map((widget, i) => (
+                <FooterWidget {...widget} key={i} />
               ))}
             </Row>
           </Col>
