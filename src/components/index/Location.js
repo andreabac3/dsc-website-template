@@ -14,7 +14,7 @@ const Location = () => {
     }
   `)
 
-  return src == null || src === '' ? null : (
+  return src === '' ? null : (
     <section id="location" className="section-spacer">
       <Container>
         <header className="text-center">

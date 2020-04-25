@@ -46,8 +46,7 @@ const Header = () => {
                   </p>
                 </div>
               </div>
-
-              {calendar == null || calendar === '' ? null : (
+              {calendar === '' ? null : (
                 <a className="hero-button" href={calendar}>
                   <FontAwesomeIcon icon={faCalendar} className="mr-2" />
                   Add to calendar

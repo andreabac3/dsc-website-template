@@ -41,7 +41,7 @@ const Faqs = () => {
           <Faq {...faq4} />
         </Row>
       </Container>
-      {mail == null ? null : (
+      {mail === '' ? null : (
         <div className="mt-40 text-center">
           <a href={`mailto:${mail}`} className="hero-button">
             Send us an email

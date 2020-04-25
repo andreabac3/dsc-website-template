@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="footer-widget first-of-footer-widget">
               <img src={logo} alt="dsc logo" className="logo-sm mb-10" />
               <p>&copy; {new Date().getFullYear()} | All Rights Reserved.</p>
-              {mail == null ? null : (
+              {mail === '' ? null : (
                 <>
                   <span>Feel free to drop us an email at </span>
                   <a href={`mailto:${mail}`}> {mail} </a>{' '}

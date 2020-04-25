@@ -61,7 +61,7 @@ const Nav = ({ register }) => {
               <BsNav.Link href="#faqs">Faqs</BsNav.Link>
             </BsNav.Item>
           </BsNav>
-          {register == null ? null : (
+          {register === '' ? null : (
             <div className="custom-menu__right">
               <a
                 href={register}
