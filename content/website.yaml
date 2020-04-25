@@ -1,9 +1,9 @@
 - title: 'Developer Student Club'
   description: 'Developer Student Clubs(DSC) is a Google Developers program for university students to acquire technical skills and solve problems'
   university: 'UniversityName'
-  register: 'https://www.google.it/intl/it/forms/about/'
   lang: 'en'
-  calendar: '#'
+  # register: 'https:// www.google.it/intl/it/forms/about/'
+  # calendar: 'https://...'
   mail: 'example@example.com'
   social:
     youtube: 'https://youtube.com'
