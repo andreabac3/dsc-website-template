@@ -72,7 +72,7 @@ npm run deploy
 ## Deploy on your machine 
 
 ```sh
-gatsby develop --host 0.0.0.0
+npm run develop
 ```
 
 ## Deploy on Firebase Hosting 🔥
