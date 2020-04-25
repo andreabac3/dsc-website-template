@@ -30,6 +30,7 @@ const Location = () => {
             style={{ border: 0 }}
             allowfullscreen=""
             aria-hidden="false"
+            title="location"
             tabindex="0"
           ></iframe>
         </div>
