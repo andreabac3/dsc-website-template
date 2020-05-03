@@ -154,4 +154,5 @@ social {
 - **Alessandro Scandone** (**Core Team** - Frontend developer) - [Github profile](https://github.com/ascandone)
 
 
-> A refactor of the [EKSU DSC](https://github.com/DSCEksu/dsceksu-laravel) website as a [gatsby](https://www.gatsbyjs.org/) template.
+### Special thanks to the EKSU DSC teams:
+This is a refactor of the [EKSU DSC](https://github.com/DSCEksu/dsceksu-laravel) website as a [gatsby](https://www.gatsbyjs.org/) template.
