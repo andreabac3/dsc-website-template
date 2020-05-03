@@ -1,10 +1,10 @@
-- title: 'Developer Student Club'
-  description: 'Developer Student Clubs(DSC) is a Google Developers program for university students to acquire technical skills and solve problems'
+- title: 'Developer Student Club' # for <title> tag
+  description: 'Developer Student Clubs(DSC) is a Google Developers program for university students to acquire technical skills and solve problems' #Meta description
   university: 'UniversityName'
   lang: 'en'
-  register: ''
-  calendar: ''
-  mail: ''
+  register: '' # optional
+  calendar: '' # optional
+  mail: '' # optional
   social:
     youtube: 'https://youtube.com'
     github: 'https://github.com'
