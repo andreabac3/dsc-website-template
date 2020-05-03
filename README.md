@@ -72,10 +72,12 @@ firebase init
 
 then select **Firebase Hosting** and the firebase project you wish to use or creat a new one if you haven't done it previously.
 
+These first three steps are needed only once during the first configuration. After that, only step 4 is needed to deploy on Firebase.
+
 4. Finally we can deploy our website
 
 ```sh
-gatsby build && firebase deploy
+npm run deployFirebase
 ```
 
 All done! Once the deployment concludes, you can access your website using `firebaseProjectId.firebaseapp.com` or `firebaseProjectId.web.app`.
