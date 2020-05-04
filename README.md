@@ -11,32 +11,27 @@ To change the content of the site, go to the `content` folder located in the roo
 
 ## 🚀 Quick Start
 
-To install you first need [node.js](https://nodejs.org/en/) on your machine
-
+To install you first need [node.js](https://nodejs.org/en/) on your machine.
+You need to perform the following steps only the first time.
 ```bash
 # Clone the repo
-$ git clone https://github.com/andreabac3/dsc-website-template.git
-$ cd dsc-website-template
+git clone https://github.com/andreabac3/dsc-website-template.git
+cd dsc-website-template/
 
 # Install the gatbsy CLI
-$ npm i -g gatsby-cli
+npm i -g gatsby-cli
 
 # Install local dependencies
-$ npm i
+npm install
 
 # Run on localhost:8000 (by default)
 # and edit the /content folder
-$ npm run develop
-
-# Deploy on github pages
-$ npm run deploy
-
-# You can also deploy the website on firebase.
-# Read down for more
+npm run develop
 ```
 
 **that's it!**
 
+# Deploy
 ## Deploy on Firebase Hosting 🔥
 
 We suggest to read the [Firebase Hosting guide reference from Gatsby website](https://www.gatsbyjs.org/docs/deploying-to-firebase/)
@@ -45,8 +40,8 @@ Make sure you have:
 
 - a Firebase Account
 - created a Firebase Project
-  <details><summary>Click here to read more about Firebase Deploy</summary>
-  <p>
+<details><summary>Click here to read more about Firebase Deploy</summary>
+<p>
 
 > You can skip the first two points of the guide if you have already installed and configured the following dependencies.
 
@@ -86,6 +81,11 @@ N.B: of course replace the keyword <firebaseProjectId> with the name of your pro
 
 </p>
 </details>
+
+## Deploy on Github Pages
+```sh
+npm run deploy
+```
 
 ## Extra steps: How to add extra icons, links
 
