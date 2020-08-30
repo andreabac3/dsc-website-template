@@ -5,6 +5,8 @@
 The commitment of this repository is to allow all the Developer Student Clubs to **generate a site** for their club in **less than 3 minutes**, performing a few simple steps.<br> <br>
 **The management of this site does not require any kind of web development and backend competence.**
 
+## Demo
+You can see the [demo here](https://andreabac3.github.io/dsc-website-template/)
 ## How can I change the content of the site without knowing web languages?
 
 To change the content of the site, go to the `content` folder located in the root of the project. In this folder there are several .yaml files in which you can modify the contents. 
